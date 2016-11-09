@@ -124,7 +124,7 @@ else if (cmd === 'update') {
         } else {
             console.log("getting to destoy");
             var pets = JSON.parse(data);
-            pets.splice(1, index);
+            pets.splice(0, 1);
         }
 
         var petsJSON = JSON.stringify(pets);
